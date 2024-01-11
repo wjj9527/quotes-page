@@ -1,0 +1,85 @@
+.device-statistics{
+  .banner-card-group{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    //background: #ffffff;
+    width: 100%;
+    .arrow-btn{
+      flex: 0 0 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .iconfont{
+        font-size: 44px;
+      }
+    }
+    .scroll-container{
+      flex: 1;
+      padding: 0 12px;
+      height: 100%;
+      overflow: hidden;
+      transition: .3s ease all;
+      .scroll-inner{
+        display: flex;
+        padding: 6px 0;
+      }
+      .card{
+        position: relative;
+        flex: 0 0 200px;
+        height: 114px;
+        margin-right: 12px;
+        background-size:  60px auto;
+        background-repeat: no-repeat;
+        background-position: 120px center;
+        background-color: #ffffff;
+        border-radius: 8px;
+        //overflow: hidden;
+        .title{
+          width: 120px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 120px;
+          padding-left: 24px;
+        }
+        .badge{
+          background-color: #e32525;
+          height: 12px;
+          width: 12px;
+          border-radius: 6px;
+          position: absolute;
+          top: -3px;
+          left: -3px;
+        }
+      }
+    }
+  }
+  .chart-line{
+    display: flex;
+    margin-top: 24px;
+    height: 350px;
+
+    .chart-content{
+      flex: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #ffffff;
+      padding: 12px;
+      box-sizing: border-box;
+      .chart{
+        height: 100%;
+        width: 100%;
+      }
+      &.large{
+        flex: 0 0 60%;
+      }
+      &.left{
+        margin-right: 24px;
+      }
+    }
+  }
+}

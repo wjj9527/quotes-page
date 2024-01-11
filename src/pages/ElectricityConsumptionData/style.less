@@ -1,0 +1,76 @@
+.elec-con-data {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .scroll-content{
+    flex: 1;
+    overflow-y: auto;
+  }
+  .table-content {
+    padding-top: 48px;
+    position: relative;
+    background: #ffffff;
+    //background: rgb(36, 36, 36);
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    //padding-top: 24px;
+    .title {
+      font-size: 16px;
+      color: #333333;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 1000;
+    }
+  }
+  .chart-content {
+    position: relative;
+    background: #ffffff;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    padding-top: 24px;
+    margin-bottom: 24px;
+    .title {
+      font-size: 16px;
+      color: #333333;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 1000;
+    }
+  }
+  .chart {
+    height: 400px;
+  }
+  .ant-btn {
+    margin-left: 12px;
+  }
+  .table-wrapper{
+    padding: 24px;
+  }
+}
+.search-handle {
+  background: #ffffff;
+  margin-bottom: @marginMD;
+  padding: @paddingMD;
+  display: flex;
+  justify-content: flex-end;
+  .search-inline-block-item {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin-right: @marginMD;
+    .label {
+      margin: 0 @marginMD;
+      font-size: 14px;
+    }
+    .content {
+      flex: 1;
+    }
+    .btn {
+      //margin: 0 @marginXS;
+    }
+  }
+}
