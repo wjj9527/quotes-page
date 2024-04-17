@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useRef, useState } from 'react';
+import React, {  useEffect, useRef, useState } from 'react';
 import { Table, Button, Form, DatePicker, Select, TreeSelect } from 'antd';
 import moment from 'moment';
 import * as echarts from 'echarts';
@@ -9,8 +9,6 @@ import {
   usageContrast,
   usageDataTable,
 } from '@/http/api/editor';
-
-
 
 const DeviceCardList: React.FC = () => {
   const [timeType, setTimeType] = useState('');

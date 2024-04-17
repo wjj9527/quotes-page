@@ -4,3 +4,5 @@ export default {
     'process.env.BASE_URL': 'http://192.168.2.234:9981',
   },
 };
+
+

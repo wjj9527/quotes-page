@@ -8,6 +8,8 @@ const client = Axios.create({
 export async function request(config: AxiosRequestConfig) {
   // @ts-ignore
   config.headers.projectId = 13;
+  // @ts-ignore
+  config.headers['temp-type'] = 'project-config';
   try {
     const response = await client.request(config);
     const { data } = response;

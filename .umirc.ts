@@ -33,10 +33,17 @@ export default defineConfig({
         {
           path:"GangControl",
           component: "@/pages/GangControl"
-        }
+        },
+        {
+          path:"SurveillanceVideo",
+          component: "@/pages/SurveillanceVideo"
+        },
       ],
     },
   ],
   fastRefresh: {},
   publicPath:'./',
+  history: {
+    type: 'hash',
+  },
 });
